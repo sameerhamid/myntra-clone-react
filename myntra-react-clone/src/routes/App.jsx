@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import FetchItems from "../components/FetchItems";
 import { useSelector } from "react-redux";
 import Loading from "../components/Loading";
-import OrderMsg from "../components/OrderMsg";
 
 function App() {
   const fetchStatus = useSelector((store) => store.fetchStatus);
@@ -12,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <OrderMsg />
+
       <FetchItems />
       {fetchStatus.currentlyFetching ? <Loading /> : <Outlet />}
 
