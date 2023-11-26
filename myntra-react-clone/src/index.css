@@ -213,10 +213,6 @@ header {
   margin-top: 8px;
   font-size: 18px;
   width: 100%;
-  background-color: lightgreen;
-  border: none;
-  padding: 5px 15px;
-  border-radius: 10px;
   cursor: pointer;
 }
 .bag-item-count {
@@ -379,4 +375,14 @@ a.action_container:link {
   width: 14px;
   height: 14px;
   cursor: pointer;
+}
+
+/* loading styling starts */
+
+.my_loading_container {
+  width: 80%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
