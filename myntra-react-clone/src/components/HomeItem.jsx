@@ -35,15 +35,20 @@ const HomeItem = ({ item }) => {
         <button
           className="btn btn-add-bag btn-danger"
           onClick={() => handleRemoveFromBag(item.id)}>
-          <MdDelete />
-          Remove from Bag
+          <span>
+            {" "}
+            <MdDelete />
+          </span>
+          <span> Remove from Bag</span>
         </button>
       ) : (
         <button
           className="btn btn-add-bag btn-success"
           onClick={() => handleAddToBag(item.id)}>
-          <MdAddCircleOutline />
-          Add to Bag
+          <span>
+            <MdAddCircleOutline />
+          </span>
+          <span> Add to Bag</span>
         </button>
       )}
     </div>
